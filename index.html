@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/common.js"></script>  
+  <style>
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="skipNav" class="skip__nav">
+      <a href="#gnb" class="skip__item">메뉴 바로가기</a>
+      <a href="#content" class="skip__item">본문 바로가기</a>
+    </div>  
+
+    <!-- <header class="header" id="header">
+      <div class="header__inner">
+        <button></button>
+      </div>
+    </header> -->
+  
+    <main class="content">    
+      <div>셀렉트 -ul 태그변경</div>
+    
+      <div class="select"  data-designSelect>
+        <select name="" id="">
+          <option value="선택1-1">선택1-1</option>
+          <option value="선택2-1">선택2-1</option>
+          <option value="선택3-1">선택3-1</option>
+        </select>
+        <button class="select__button">셀렉트 열기</button>
+      </div> 
+     
+
+      <!-- input text -->  
+      <div class="input__wrap" data-input-text>
+        <div class="input__box">     
+          <label class="input__label" for="in-">타이틀</label>     
+          <div class="input__item">
+            <input type="text" class="input__text" title="타이틀 입력" id="in-">
+          </div>
+          <div class="input__desc">안내문구 영역입니다</div>
+        </div>
+
+        <div class="input__box input__box--error">     
+          <label class="input__label" for="in">타이틀</label>     
+          <div class="input__item">
+            <input type="text" class="input__text" title="주민등록번호 앞자리" id="in">
+          </div>
+          <div class="input__desc">에러문구입니다</div>
+        </div>
+
+        <div class="input__box">     
+          <label class="input__label" for="in02">주민등록번호</label>     
+          <div class="input__item">
+            <input type="text" class="input__text" title="주민등록번호 앞자리" id="in02">
+            <span class="input__dash dash"></span>
+            <input type="text" class="input__text" title="주민등록번호 뒷자리">  
+          </div>
+        </div>
+
+        <div class="input__box">     
+          <label class="input__label" for="in03">이메일</label>     
+          <div class="input__item">
+            <input type="text" class="input__text" title="이메일 앞자리" id="in03">
+            <span class="input__dash">@</span>
+            <a href="javascript:;" class="input__button">도메인 입력</a>
+          </div>
+        </div>
+      </div>
+      <!--//input text -->
+
+      <!-- radio button -->
+      <div class="radio__wrap radio__wrap--button">
+        <span class="radio radio__button">
+          <input type="radio" class="radio__input" id="inputRadio1-1" name="inputRadio1">
+          <label for="inputRadio1-1" class="radio__label"><span>인풋 버튼영역</span></label>
+        </span>
+
+        <span class="radio radio__button">
+          <input type="radio" class="radio__input" id="inputRadio1-2" name="inputRadio1">
+          <label for="inputRadio1-2" class="radio__label"><span>인풋 버튼영역</span></label>
+        </span>
+        <span class="radio radio__button">
+          <input type="radio" class="radio__input" id="inputRadio1-3" name="inputRadio1">
+          <label for="inputRadio1-3" class="radio__label"><span>인풋 버튼영역</span></label>
+        </span>
+      </div>
+      <!--//radio button -->
+
+      <!-- accordion -->
+      <div class="accordion__wrap" data-accordion>
+        <div class="accordion__item">
+          <div class="accordion__head">
+            <a href="javascript:;" class="accordion__tit">아코디언 타이틀</a>
+          </div>
+          <div class="accordion__content">
+            아코디언 컨텐츠 영역입니다.
+          </div>
+        </div>
+        <div class="accordion__item">
+          <div class="accordion__head">
+            <a href="javascript:;" class="accordion__tit">아코디언 타이틀</a>
+          </div>
+          <div class="accordion__content">
+            아코디언 컨텐츠 영역입니다.
+          </div>
+        </div>
+      </div>
+      <!--// accordion -->
+
+      <!-- terms -->
+      <div class="terms__wrap" data-allCheckbox>
+        <span class="radio">
+          <input type="radio" class="radio__input" id="inputRadio2-1" name="inputRadio2-1">
+          <label for="inputRadio2-1" class="radio__label">
+            <i class="radio__ico">전체동의</i>
+            <span></span>
+          </label>
+        </span>
+      </div>
+      <!--// terms -->
+      
+    </main>
+  </div>
+</body>
+</html>
