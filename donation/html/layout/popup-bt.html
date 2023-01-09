@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../static/css/style.css" />
+    <script src="../../static/js/jquery-1.12.4.min.js"></script>
+    <script src="../../static/js/ui.js"></script>
+    <script src="../../static/js/html.js"></script>
+    <title>index</title>
+  </head>
+  <body>
+    <div class="wrap wrap--fixed" id="wrap">
+      <!-- Header include영역(s) -->
+      <include src="../inc/header.html" data-include-opt='{"visible":"true","class":"header--title, header--back, header--close", "title":"페이지타이틀"}'></include>
+
+      <!--// Header include영역(e) -->
+      <main id="container">
+        <div class="content" id="content">
+          <a href="javascript:;" class="btn-call-pop button button--secondary" onclick="ui.popup.open('layer-test');">팝업열기</a>
+          
+          <div class="layer__popup layer__popup--bt is-active" id="layer-test">
+            <div class="layer__inner">
+              <div class="layer__header">
+                <h1 class="layer__header-tit">내 통장 표시</h1>
+              </div>
+              <div class="layer__content">컨텐츠영컨텐츠영역asd컨텐츠영역asd역asd</div>
+              <div class="layer__footer">
+                <button type="button" class="button button--secondary button--lg">버튼</button>
+              </div>
+              <button type="button" class="layer__close"><span class="blind">close</span></button>
+            </div>
+          </div>
+        </div>
+      </main>
+<script>
+</script>
+    </div>
+  </body>
+</html>

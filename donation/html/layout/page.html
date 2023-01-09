@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../static/css/style.css" />
+    <script src="../../static/js/jquery-1.12.4.min.js"></script>
+    <script src="../../static/js/ui.js"></script>
+    <script src="../../static/js/html.js"></script>
+    <title>index</title>
+  </head>
+  <body>
+    <div class="wrap wrap--fixed" id="wrap">
+      <!-- 
+        data-include-opt 확인
+
+        header 존재할 경우 true 없을 경우 false
+        data-include-opt='{"visible":"true"}
+
+        header 클래스 넣을 경우
+        data-include-opt='{"class":"header--title, header--gnb"}
+        
+        data-include-opt='{"title":"페이지타이틀"}'
+      -->
+
+      <!-- Header include영역(s) -->
+      <include src="../inc/header.html" data-include-opt='{"visible":"true","class":"header--title, header--close", "title":"페이지타이틀"}'></include>
+
+      <!--// Header include영역(e) -->
+      <main id="container">
+        <div class="content" id="content"> 
+       
+          
+          <div class="fixed__wrap">
+            <button type="button" class="button button--secondary button--lg">버튼</button>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer include영역(s) 
+      <include src="../inc/footer.html" data-include-opt='{"visible":"true","class":"footer--test"}'></include>
+      -->
+<script>
+</script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+// import
+// @import '../../../mix/mixin';
+@import './mixin';
+@import './base';
+@import './layout/header';
+@import './layout/footer';
+@import './layout/layout';
+@import './layout/ui';
+
+/* import 수정 */  
+@import './component'; 

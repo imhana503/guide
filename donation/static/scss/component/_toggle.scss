@@ -1,0 +1,35 @@
+.toggle {
+    $root: &;
+    &__head {
+      border:1px solid gray;
+    }
+    &__tit{
+      display:block;
+      position:relative;
+      width:100%;
+      height:100%;
+      padding:1rem;
+      &::after{
+        display:block;
+        content:"";
+        width:2rem;
+        height:2rem;
+        background:red;
+        position:absolute;
+        top:0.3rem; 
+        right:0.3rem;
+      }
+    }
+    &__content{
+      padding:1rem;
+      display:none;
+    }
+    &__item.is-active {
+      #{$root}__content{
+        display:block;
+      }
+      #{$root}__tit::after {
+        background:blue;
+      }
+    }
+  }

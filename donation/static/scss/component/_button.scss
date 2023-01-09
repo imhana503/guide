@@ -1,0 +1,115 @@
+/* button-default */
+@mixin button-default {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+/* button */
+.button {
+    @include button-default;
+    $root: &;
+    &.ico--left::before{
+        display: inline-block;
+        content:"";
+        width:1.8rem;
+        height:1.8rem;
+        margin-right:0.4rem;
+        background:blue;
+    }
+    &.ico--right::after{
+        display: inline-block;
+        content:"";
+        width:1.8rem;
+        height:1.8rem;
+        margin-left:0.4rem;
+        background:blue;
+    }
+    
+    &--primary {  
+        background-color: $KB_UI_02;
+        color: #fff;
+        &:hover {
+            // background: $c-primaryHover;
+        }
+    }
+    &--secondary {
+        background-color: $KB_Give_09;
+    }
+    &--tertiary {
+        font-size:1.6rem;
+        color:$KB_Give_02;
+        border:1px solid $KB_Give_05;
+        border-radius: 2px;
+    }
+    &--action{
+        height:4.4rem;
+        font-size:2rem;
+        color:$KB_Give_02;
+        background:$KB_Give_11;
+        border:1px solid $KB_Give_05;
+        border-radius: 32px;
+    }
+    &--input{
+        min-width:5.7rem;
+        width:auto;
+        height:3rem;
+        font-size:1.4rem;
+        color:$KB_Give_11;
+        background:$KB_Give_02;
+        border-radius: 100px;
+    }
+    &--success {
+        background-color: $KB_Give_09;
+    }
+    &--error {
+        background-color: $KB_Give_09;
+    }
+    &--xxl {
+        height: 8.7rem;
+    }
+    &--xl {  
+        height: 7.1rem;
+    }
+    &--lg {
+        height: 5.6rem;
+    }
+    &--md {
+        height: 4.8rem;
+    }
+    &--sm {
+        height: 4rem;
+    }
+    &--xs {
+        height: 2.8rem;
+    }
+    &__wrap {
+        display: flex;
+        &--flex {
+            #{$root} {
+                flex: 1;
+            }
+        }
+        &--flex.ratio{
+            #{$root} {
+                flex: 1;
+                & ~ .button {
+                    flex: 2;
+                }
+            }
+
+        }
+    }
+    &.disabled {
+        background-color: $KB_Give_08;
+        color:$KB_Give_06;
+    }
+    //button-action
+    &-act {
+        @include button-default;
+        border-radius: 8px;
+    }
+}

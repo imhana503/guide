@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../static/css/style.css" />
+    <script src="../../static/js/jquery-1.12.4.min.js"></script>
+    <script src="../../static/js/ui.js"></script>
+    <script src="../../static/js/html.js"></script>
+    <title>index</title>
+  </head>
+  <body>
+    <div class="wrap" id="wrap">
+      <!-- Header include영역(s) -->
+      <include src="../inc/header.html" data-include-opt='{"visible":"true","class":"header--title, header--back", "title":"페이지타이틀"}'></include>
+      <!--// Header include영역(e) -->
+      <main id="container">
+        <div class="content" id="content"> 
+          <!-- InfoBox -->
+          <div class="guid-item">
+            <h2 class="guid__tit">InfoBox</h2>
+            <div class="infobox">
+              <div class="infobox__item">
+                <p class="infobox__text">휴대폰 결제 금액은 익월 휴대폰 요금에 합산되어 청구됩니다.</p>
+              </div>
+            </div>
+
+            <h3 class="guid__tit">InfoBox highlight</h3>
+            <div class="infobox infobox--highlight">
+              <div class="infobox__item">
+                <p class="infobox__text">휴대폰 결제 금액은 익월 휴대폰 요금에 합산되어 청구됩니다.</p>
+              </div>
+            </div>
+
+            <h3 class="guid__tit">InfoBox warnning</h3>
+            <div class="infobox infobox--warnning">
+              <div class="infobox__item">
+                <p class="infobox__text">휴대폰 결제 금액은 익월 휴대폰 요금에 합산되어 청구됩니다.</p>
+              </div>
+            </div>
+
+            <h3 class="guid__tit">InfoBox button</h3>
+            <div class="infobox">
+                <div class="infobox__item">
+                  <p class="infobox__text">휴대폰 결제 금액은 익월 휴대폰 요금에 합산되어 청구됩니다.</p>
+                  <a href="javascript:;" class="infobox__button">Label</a>
+                </div>
+            </div>
+
+            <h3 class="guid__tit">InfoBox title</h3>
+            <div class="infobox">
+                <div class="infobox__item">
+                  <h2 class="infobox__tit">알려드립니다.</h2>
+                  <p class="infobox__text">휴대폰 결제 금액은 익월 휴대폰 요금에 합산되어 청구됩니다.</p>
+                  
+                </div>
+            </div>
+          </div>
+
+          <!-- Textfield -->
+          <div class="guid-item">
+            <h2 class="guid__tit">Textfield </h2>
+            <h3 class="guid__tit">인풋형</h3>
+            <div class="input__box">
+              <label for="input01" class="input__label">레이블</label>
+              <div class="input__item">
+                <input type="text" title="레이블 입력" placeholder="Hint Text" title="레이블 입력" id="input01" />
+              </div>
+            </div>
+
+            <h3 class="guid__tit">텍스트 필드형</h3>
+            <div class="textarea">
+              <textarea placeholder="Hint Tex"></textarea>
+              <div class="textarea__number"><em class="state">0</em> / 5,000</div>
+            </div>
+            <h3 class="guid__tit">텍스트 필드형-focus</h3>
+            <div class="textarea textarea--focus">
+              <textarea placeholder="텍스트에어리어">Hint Text</textarea>
+              <div class="textarea__number"><em class="state">0</em> / 5,000</div>
+            </div>
+            <h3 class="guid__tit">텍스트 필드형-readonly</h3>
+            <div class="textarea textarea--readonly">
+              <textarea placeholder="텍스트에어리어" readonly>Hint Text</textarea>
+              <div class="textarea__number"><em class="state">0</em> / 5,000</div>
+            </div>
+
+            <h3 class="guid__tit">[숫자 + 단위 ]</h3>
+            <div class="input__box input--right">
+              <label for="input02" class="input__label">레이블</label>
+              <div class="input__item">
+                <input type="number" id="input02" />
+                <div class="input__flex">
+                  <span class="sum">만원</span>
+                </div>
+              </div>
+              <div class="input__text">
+                <span class="sum"><em class="sum--n">2000</em> 만원</span>
+              </div>
+            </div>
+
+            <div class="input__box">
+              <label for="input03" class="input__label">레이블</label>
+              <div class="input__item">
+                <input type="tel" id="input03" value="입력텍스트" readonly />
+              </div>
+            </div>
+
+            <div class="input__box">
+              <label for="input04" class="input__label">레이블</label>
+              <div class="input__item">
+                <input type="tel" id="input04" value="●●●●●●" />
+              </div>
+            </div>
+
+            <h3 class="guid__tit">안내문구</h3>
+            <div class="input__box">
+              <label for="input05" class="input__label">레이블 Lable</label>
+              <div class="input__item">
+                <input type="text" id="input05" />
+              </div>
+              <div class="input__text">안내문구 영역입니다.</div>
+            </div>
+
+            <h3 class="guid__tit">에러문구</h3>
+            <div class="input__box input--error">
+              <label for="input06" class="input__label">레이블 Lable</label>
+              <div class="input__item">
+                <input type="text" id="input06" />
+              </div>
+              <div class="input__text">안내문구 영역입니다.</div>
+            </div>
+
+            <h3 class="guid__tit">성공문구</h3>
+            <div class="input__box input--success">
+              <label for="input07" class="input__label">레이블 Lable</label>
+              <div class="input__item">
+                <input type="text" id="input07" />
+              </div>
+              <div class="input__text">완료문구 영역입니다.</div>
+            </div>
+
+            <h3 class="guid__tit">닫기버튼</h3>
+            <div class="input__box input--focus input--success">
+              <label for="input08" class="input__label">레이블 Lable</label>
+              <div class="input__item">
+                <input type="text" id="input08" />
+                <div class="input__flex">
+                  <button type="button" class="input__close"><span class="blind">close</span></button>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="guid__tit">검색버튼</h3>
+            <div class="input__box input--focus input--success">
+              <label for="input09" class="input__label">레이블 Lable</label>
+              <div class="input__item">
+                <input type="text" id="input09" />
+                <div class="input__flex">
+                  <button type="button" class="input__search">검색</button>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="guid__tit">주민등록번호</h3>
+            <div class="input__wrap">   
+              <div class="input__box">
+                <label class="input__label">주민등록번호</label>
+                <div class="input-item-flex">
+                  <div class="input__item"><input type="tel" title="주민등록번호 앞 6자리 입력" /></div>
+                  <div class="input__item dash">
+                    <span class="dash--hp"></span>
+                  </div>
+                  <div class="input__item"><input type="tel" title="주민등록번호 뒤 7자리  입력" /></div>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+
+          <!-- 탭 -->
+          <div class="guid-item">
+            <h2 class="guid__tit">Tabs</h2>
+            <h3 class="guid__tit">Tab-line</h3>
+            <div class="tab tab--line">
+              <ul class="tab__list">
+                <li class="is-active"><a href="javascript:;">메뉴명</a></li>
+                <li><a href="javascript:;">메뉴명</a></li>
+                <li><a href="javascript:;">메뉴명</a></li>
+              </ul>
+              <div class="tab__content">
+                <div>탭 컨텐츠</div>
+                <div>탭 컨텐츠</div>
+                <div>탭 컨텐츠</div>
+              </div>
+            </div>
+
+            <h3 class="guid__tit">Tab-box</h3>
+            <div class="tab tab--box">
+              <ul class="tab__list">
+                <li class="is-active"><a href="javascript:;">메뉴명</a></li>
+                <li><a href="javascript:;">메뉴명</a></li>
+              </ul>
+              <div class="tab__content">
+                <div>탭 컨텐츠</div>
+                <div>탭 컨텐츠</div>
+                <div>탭 컨텐츠</div>
+              </div>
+            </div>
+            <h3 class="guid__tit">Tab-box 메뉴3개이상일때 클래스 'ohter'추가</h3>
+            <h3 class="guid__tit">Tab-box</h3>
+            <div class="tab tab--box other">
+              <ul class="tab__list">
+                <li class="is-active"><a href="javascript:;">메뉴명</a></li>
+                <li><a href="javascript:;">메뉴명</a></li>
+                <li><a href="javascript:;">메뉴명</a></li>
+              </ul>
+              <div class="tab__content">
+                <div>탭 컨텐츠</div>
+                <div>탭 컨텐츠</div>
+                <div>탭 컨텐츠</div>
+              </div>
+            </div>
+          </div>
+          <!--// 탭 -->
+
+          <!-- 버튼 -->
+          <div class="guid-item">
+            <h2 class="guid__tit">버튼 - full</h2>
+            <h3 class="guid__tit">버튼 - Primary</h3>
+            <h4 class="guid__tit">버튼 - 56 lg</h4>
+            <button type="button" class="button button--primary button--lg">버튼</button>
+            <h4 class="guid__tit">버튼 - 48 md</h4>
+            <button type="button" class="button button--primary button--md">버튼</button>
+            <h4 class="guid__tit">버튼 - 40 sm</h4>
+            <button type="button" class="button button--primary button--sm">버튼</button>
+
+            <h3 class="guid__tit">버튼 - Secondary</h3>
+            <h4 class="guid__tit">버튼 - 56 lg</h4>
+            <button type="button" class="button button--secondary button--lg">버튼</button>
+            <h4 class="guid__tit">버튼 - 48 md</h4>
+            <button type="button" class="button button--secondary button--md">버튼</button>
+            <h4 class="guid__tit">버튼 - 40 sm</h4>
+            <button type="button" class="button button--secondary button--sm">버튼</button>
+
+            <h3 class="guid__tit">버튼 - Secondary disabled</h3>
+            <button type="button" class="button button--secondary button--sm disabled">버튼</button>
+          
+            <h2 class="guid__tit">버튼 2개</h2>
+            <div class="button__wrap button__wrap--flex">
+              <a href="javascript;" role="button" class="button button--secondary button--sm">버튼</a>
+              <a href="javascript;" role="button" class="button button--primary button--sm">버튼</a>
+            </div>
+
+            <h2 class="guid__tit">버튼 - tertiary</h2>
+            <h4 class="guid__tit">버튼 - 87 xxl</h4>
+            <a href="javascript;" role="button" class="button button--tertiary button--xxl">Label</a>
+            <h4 class="guid__tit">버튼 - 87 xl</h4>
+            <a href="javascript;" role="button" class="button button--tertiary button--xl">Label</a>
+            <h4 class="guid__tit">버튼 - 56 lg</h4>
+            <a href="javascript;" role="button" class="button button--tertiary button--lg">Label</a>
+            <h4 class="guid__tit">버튼 - 47 md</h4>
+            <a href="javascript;" role="button" class="button button--tertiary button--md">Label</a>
+            <h4 class="guid__tit">버튼 - 40 sm</h4>
+            <a href="javascript;" role="button" class="button button--tertiary button--sm">Label</a>
+            <h4 class="guid__tit">버튼 - 28 xs</h4>
+            <a href="javascript;" role="button" class="button button--tertiary button--xs">Label</a>
+          
+            <h4 class="guid__tit">버튼 - 왼족아이콘</h4>
+            <a href="javascript;" role="button" class="button button--tertiary button--sm ico--left">Label</a>
+            <h4 class="guid__tit">버튼 - 오른아이콘</h4>
+            <a href="javascript;" role="button" class="button button--tertiary button--sm ico--right">Label</a>
+          
+            <h2 class="guid__tit">버튼 - ActionButton</h2>
+            <div class="button__wrap button__wrap--flex">
+              <a href="javascript;" role="button" class="button button--action ico--left">Label</a>
+              <a href="javascript;" role="button" class="button button--action ico--right">Label</a>
+            </div>
+
+            <h2 class="guid__tit">버튼 - inputBtn</h2>
+            <a href="javascript;" role="button" class="button button--input">Label</a>
+            <a href="javascript;" role="button" class="button button--input">Label</a>
+
+            <h2 class="guid__tit">하단버튼 고정</h2>
+            <div class="fixed__wrap"><button type="button" class="button button--secondary button--lg">버튼</button></div>
+          </div>
+           <!--// 버튼 --> 
+
+          <!-- checkbox -->
+          <div class="guid-item">
+            <h2 class="guid__tit">input-check</h2>
+            <span class="checkbox">
+              <input type="checkbox" id="inputCheck01" name="inputCheck01" class="checkbox__input" />
+              <label for="inputCheck01" class="checkbox__label">
+                <i aria-hidden="true" class="checkbox__ico"></i>
+              </label>
+            </span>
+            <span class="checkbox">
+              <input type="checkbox" id="inputCheck03" class="checkbox__input" />
+              <label for="inputCheck03" class="checkbox__label">
+                <i aria-hidden="true" class="checkbox__ico"></i>
+              </label>
+            </span>
+
+            <h3 class="guid__tit">input-check 감싸는태그 checkbox__wrap</h3>
+            <div class="checkbox__wrap">
+              <span class="checkbox">
+                <input type="checkbox" id="inputCheck" class="checkbox__input" />
+                <label for="inputCheck" class="checkbox__label">
+                  <i aria-hidden="true" class="checkbox__ico"></i>
+                  <span>check</span>
+                </label>
+              </span>
+            </div>
+
+            <h2 class="guid__tit">input-check 약관</h2>
+            <span class="checkbox checkbox-terms">
+              <input type="checkbox" id="inputCheck05" name="inputCheck05" class="checkbox__input" />
+              <label for="inputCheck05" class="checkbox__label">
+                <i aria-hidden="true" class="checkbox__ico"></i>
+              </label>
+            </span>
+          </div>
+          <!--// checkbox --> 
+
+          <!-- radio -->
+          <div class="guid-item">
+            <h2 class="guid__tit">input-radio</h2>
+            <span class="radio">
+              <input type="radio" id="inputRadio3" name="inputRadio" class="radio__input" />
+              <label for="inputRadio3" class="radio__label">
+                <i aria-hidden="true" class="radio__ico"></i>
+              </label>
+            </span>
+            <span class="radio">
+              <input type="radio" id="inputRadio5" name="inputRadio" class="radio__input" />
+              <label for="inputRadio5" class="radio__label">
+                <i aria-hidden="true" class="radio__ico"></i>
+              </label>
+            </span>
+
+            <h3 class="guid__tit">input-radio감싸는태그 radio__wrap</h3>
+            <div class="radio__wrap">
+              <span class="radio">
+                <input type="radio" id="inputRadio" name="inputRadio2" class="radio__input" />
+                <label for="inputRadio" class="radio__label">
+                  <i aria-hidden="true" class="radio__ico"></i>
+                  <span>radio</span>
+                </label>
+              </span>
+              <span class="radio">
+                <input type="radio" id="inputRadio2" name="inputRadio2" class="radio__input" />
+                <label for="inputRadio2" class="radio__label">
+                  <i aria-hidden="true" class="radio__ico"></i>
+                  <span>radio</span>  
+                </label>
+              </span>
+            </div>
+
+            <h2 class="guid__tit">input-radio button 형식 다디사디;자기;아</h2>
+            <div class="radio__wrap radio__wrap--button">  
+              <span class="radio">
+                <input type="radio" id="input-but" name="input-but" class="radio__input" />
+                <label for="input-but" class="radio__label">
+                  <span>선택1</span>
+                </label>
+              </span>
+              <span class="radio">
+                <input type="radio" id="input-but02" name="input-but" class="radio__input" />
+                <label for="input-but02" class="radio__label">
+                  <span>선택2</span>  
+                </label>
+              </span>
+              <span class="radio">
+                <input type="radio" id="input-but03" name="input-but" class="radio__input" />
+                <label for="input-but03" class="radio__label">
+                  <span>선택2</span>  
+                </label>
+              </span>
+            </div>
+
+          </div>
+          <!--// radio --> 
+
+          <!-- switch -->
+          <div class="guid-item">
+            <h2 class="guid__tit">Switch</h2>
+            <span class="switch">
+              <input type="checkbox" id="switch" name="switch" class="switch__input" />
+              <label for="switch" class="switch__label">
+                <i aria-hidden="true" class="switch__ico"></i>
+              </label>
+            </span> 
+
+            <span class="switch">
+              <input type="checkbox" id="switch2" name="switch" class="switch__input" disabled />
+              <label for="switch2" class="switch__label">
+                <i aria-hidden="true" class="switch__ico"></i>
+              </label>
+            </span>
+          </div>
+          <!--// switch --> 
+
+          <!-- Toggle-Device -->
+          <div class="guid-item">
+            <h2 class="guid__tit">Toggle-Device</h2>
+            <span class="switch--device">
+              <input type="checkbox" id="switch-device" name="switch-device" class="switch__input" />
+              <label for="switch-device" class="switch__label">
+                <i aria-hidden="true" class="switch__ico"></i>
+              </label>
+            </span> 
+          </div>
+          <!--// Toggle-Device --> 
+
+         
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

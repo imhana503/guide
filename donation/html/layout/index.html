@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../static/css/style.css" />
+    <script src="../../static/js/jquery-1.12.4.min.js"></script>
+    <script src="../../static/js/ui.js"></script>
+
+    <title>index</title>
+  </head>
+  <body>
+    <div calss="wrap" id="wrap">
+      <!-- 
+        data-include-opt 확인
+
+        header 존재할 경우 true 없을 경우 false
+        data-include-opt='{"visible":"true"}
+
+        header 클래스 넣을 경우 노출/비노출
+        html.js 
+        var incObjEls = { //"해당클래스가 있을시" : "해당 클래스가 block" 
+          ".header.header--title"  :".header__title",
+          ".header.header--gnb"  :".gnb__button, .gnb__test",
+          ".header.header--back"  :".header__button",
+        };
+        data-include-opt='{"class":"header--title, header--gnb"}
+        
+        data-include-opt='{"title":"페이지타이틀"}'
+       -->
+
+      <!-- Header include영역(s) -->
+      <include src="../inc/header.html" data-include-opt='{"visible":"true","class":"header--title, header--gnb", "title":"header 타이틀"}'></include>
+      <!--// Header include영역(e) -->
+
+      <!-- footer include영역(s) -->
+      <include src="../inc/footer.html" data-include-opt='{"visible":"true","class":"footer--test"}'></include>
+      <!--// footer include영역(e) -->
+    </div>
+
+    <!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+    <script src="../../static/js/html.js"></script>
+  </body>
+</html>

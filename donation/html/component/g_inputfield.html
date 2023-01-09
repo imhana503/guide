@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../static/css/style.css" />
+    <script src="../../static/js/jquery-1.12.4.min.js"></script>
+    <script src="../../static/js/jquery-ui.js"></script>
+    <script src="../../static/js/ui.js"></script>
+    <script src="../../static/js/html.js"></script>
+    <title>index</title>
+  
+  </head>
+  <body>
+    <div class="wrap" id="wrap">
+      <!-- Header include영역(s) -->
+      <include src="../inc/header.html" data-include-opt='{"visible":"true","class":"header--title, header--back", "title":"페이지타이틀"}'></include>
+      <!--// Header include영역(e) -->
+      <main id="container">
+        <div class="content" id="content"> 
+        
+          <!-- input text -->
+          <div class="input__wrap" data-element='inputText'>
+            <div class="input__box">     
+              <label class="input__label" for="in-">라벨</label>     
+              <div class="input__item">
+                <input type="text" class="input__text" title="타이틀 입력" id="in-" placeholder="placeholder">
+              </div>
+              <div class="input__desc input__desc-ico">안내문구 영역입니다</div>
+            </div>   
+
+            <div class="input__box input__box--error">     
+              <label class="input__label" for="in">타이틀</label>     
+              <div class="input__item">
+                <input type="text" class="input__text" title="주민등록번호 앞자리" id="in">
+              </div>
+              <div class="input__desc input__desc-ico">에러문구입니다</div>
+            </div>
+
+            <div class="input__box">     
+              <label class="input__label" for="in02">주민등록번호</label>     
+              <div class="input__item">
+                <input type="text" class="input__text" title="주민등록번호 앞자리" id="in02">
+                <span class="input__dash dash"></span>
+                <input type="text" class="input__text" title="주민등록번호 뒷자리">  
+              </div>
+            </div>
+
+           
+            <div class="input__box">     
+              <label class="input__label" for="in04">이메일</label>     
+              <div class="input__item">
+                <input type="text" class="input__text" title="이메일 앞자리" id="in04">
+                <span class="input__dash">@</span>
+                <select name="" id="">
+                  <option value="">도메인선택</option>
+                  <option value="">도메인선택</option>
+                  <option value="">도메인선택</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input__box">     
+              <label class="input__label" for="in03">닫기버튼</label>     
+              <div class="input__item">
+                <input type="text" class="input__text" title="이메일 앞자리" id="in03">
+                <a href="javascript:;" class="input__button input__button--close"><span class="blind">close</span></a>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </main>
+    </div >
+  </body>
+</html>

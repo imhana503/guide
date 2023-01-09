@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../static/css/style.css" />
+    <script src="../../static/js/jquery-1.12.4.min.js"></script>
+    <script src="../../static/js/jquery-ui.js"></script>
+    <script src="../../static/js/ui.js"></script>
+    <script src="../../static/js/html.js"></script>
+    <title>index</title>
+  </head>
+  <body>
+    <div class="wrap" id="wrap">
+      <!-- Header include영역(s) -->
+      <include src="../inc/header.html" data-include-opt='{"visible":"true","class":"header--title, header--back", "title":"페이지타이틀"}'></include>
+      <!--// Header include영역(e) -->
+      <main id="container">
+        <div class="content" id="content"> 
+          <!-- checkbox -->
+          <div class="guid-item">
+            <h2 class="guid__tit">input-check</h2>     
+            <span class="checkbox"  data-element='inputCheck'>
+              <input type="checkbox" id="inputCheck01" name="inputCheck01" class="checkbox__input" checked/>
+              <label for="inputCheck01" class="checkbox__label">
+                <i aria-hidden="true" class="checkbox__ico"></i>asd
+              </label>
+            </span>
+            <span class="checkbox" data-element='inputCheck'>
+              <input type="checkbox" id="inputCheck03" class="checkbox__input" />
+              <label for="inputCheck03" class="checkbox__label">
+                <i aria-hidden="true" class="checkbox__ico"></i>
+              </label>
+            </span>
+
+            <h3 class="guid__tit">input-check 감싸는태그 checkbox__wrap</h3>
+            <div class="checkbox__wrap">
+              <span class="checkbox" data-element='inputCheck'>
+                <input type="checkbox" id="inputCheck" class="checkbox__input" />
+                <label for="inputCheck" class="checkbox__label">
+                  <i aria-hidden="true" class="checkbox__ico"></i>
+                  <span>check</span>
+                </label>
+              </span>
+            </div>
+
+            <h2 class="guid__tit">input-check 약관</h2>
+
+            <div data-element='allCheckWrap'> 
+              <span class="checkbox" data-element='allCheck'>
+                <input type="checkbox" id="allCheck" name="allCheck" class="checkbox__input" />
+                <label for="allCheck" class="checkbox__label">
+                  <i aria-hidden="true" class="checkbox__ico"></i>
+                  <span>전체동의</span>
+                </label>
+              </span>
+              <span class="checkbox" data-element='inputCheck'>
+                <input type="checkbox" id="inputCheck05" class="checkbox__input" />
+                <label for="inputCheck05" class="checkbox__label">
+                  <i aria-hidden="true" class="checkbox__ico"></i>
+                </label>
+              </span>
+
+              <span class="checkbox" data-element='inputCheck'>
+                <input type="checkbox" id="ch_check" class="checkbox__input" />
+                <label for="ch_check" class="checkbox__label">
+                  <i aria-hidden="true" class="checkbox__ico"></i>
+                </label>
+              </span>
+
+              <span class="checkbox" data-element='inputCheck'>
+                <input type="checkbox" id="ch_check2" class="checkbox__input" />
+                <label for="ch_check2" class="checkbox__label">
+                  <i aria-hidden="true" class="checkbox__ico"></i>
+                </label>
+              </span>
+            </div>
+
+           
+          </div>
+          <!--// checkbox --> 
+
+          <!-- radio -->
+          <div class="guid-item">
+            <h2 class="guid__tit">input-radio</h2>
+            <span class="radio" data-element='inputCheck'>
+              <input type="radio" id="inputRadio3" name="inputRadio" class="radio__input" />
+              <label for="inputRadio3" class="radio__label">
+                <i aria-hidden="true" class="radio__ico"></i>
+              </label>
+            </span>
+            <span class="radio" data-element='inputCheck'>
+              <input type="radio" id="inputRadio5" name="inputRadio" class="radio__input" />
+              <label for="inputRadio5" class="radio__label">
+                <i aria-hidden="true" class="radio__ico"></i>
+              </label>
+            </span>
+
+            <h3 class="guid__tit">input-radio감싸는태그 radio__wrap</h3>
+            <div class="radio__wrap">
+              <span class="radio" data-element='inputCheck'>
+                <input type="radio" id="inputRadio" name="inputRadio2" class="radio__input" />
+                <label for="inputRadio" class="radio__label">
+                  <i aria-hidden="true" class="radio__ico"></i>
+                  <span>radio</span>
+                </label>
+              </span>
+              <span class="radio" data-element='inputCheck'>
+                <input type="radio" id="inputRadio2" name="inputRadio2" class="radio__input" />
+                <label for="inputRadio2" class="radio__label">
+                  <i aria-hidden="true" class="radio__ico"></i>
+                  <span>radio</span>  
+                </label>
+              </span>
+            </div>
+          </div>
+          <!--// radio --> 
+
+          <!-- switch -->
+          <div class="guid-item">
+            <h2 class="guid__tit">Switch</h2>
+            <span class="switch">
+              <input type="checkbox" id="switch" name="switch" class="switch__input" />
+              <label for="switch" class="switch__label">
+                <i aria-hidden="true" class="switch__ico"></i>
+              </label>
+            </span> 
+
+            <span class="switch">
+              <input type="checkbox" id="switch2" name="switch" class="switch__input" disabled />
+              <label for="switch2" class="switch__label">
+                <i aria-hidden="true" class="switch__ico"></i>
+              </label>
+            </span>
+          </div>
+          <!--// switch --> 
+
+          <!-- Toggle-Device -->
+          <div class="guid-item">
+            <h2 class="guid__tit">Toggle-Device</h2>
+            <span class="switch--device">
+              <input type="checkbox" id="switch-device" name="switch-device" class="switch__input" />
+              <label for="switch-device" class="switch__label">
+                <i aria-hidden="true" class="switch__ico"></i>
+              </label>
+            </span> 
+          </div>
+          <!--// Toggle-Device --> 
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

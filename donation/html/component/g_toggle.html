@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../static/css/style.css" />
+    <script src="../../static/js/jquery-1.12.4.min.js"></script>
+    <script src="../../static/js/jquery-ui.js"></script>
+    <script src="../../static/js/ui.js"></script>
+    <script src="../../static/js/html.js"></script>
+    <title>index</title>
+  </head>
+  <body>
+    <div class="wrap wrap--fixed" id="wrap">
+      <!-- Header include영역(s) -->
+      <include src="../inc/header.html" data-include-opt='{"visible":"true","class":"header--title, header--close", "title":"페이지타이틀"}'></include>
+
+      <!--// Header include영역(e) -->
+      <main id="container"> 
+        <div class="content" id="content"> 
+           <!-- toggle -->
+            <div class="toggle__wrap" data-element='toggle'>
+                <div class="toggle__item">
+                  <div class="toggle__head">
+                      <a href="javascript:;" class="toggle__tit">토글 타이틀1</a>
+                  </div>
+                  <div class="toggle__content">
+                    토글 컨텐츠 영역입니다.
+                  </div>
+                </div>
+                <div class="toggle__item">
+                  <div class="toggle__head">
+                      <a href="javascript:;" class="toggle__tit">토글 타이틀2</a>
+                  </div>
+                  <div class="toggle__content">
+                    토글 컨텐츠 영역입니다.
+                </div>
+                </div>
+            </div>
+            <!--// toggle -->
+          
+        </div>
+      </main>
+
+      <!-- footer include영역(s) 
+      <include src="../inc/footer.html" data-include-opt='{"visible":"true","class":"footer--test"}'></include>
+      -->
+<script>
+</script>
+    </div>
+  </body>
+</html>

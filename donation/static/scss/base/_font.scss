@@ -1,0 +1,57 @@
+/* font */
+// @font-face {
+//     font-family: 'Spoqa Han Sans Neo';
+//     font-weight: 300;
+//     src: local('Spoqa Han Sans Neo light'), 
+//     url('../fonts/SpoqaHanSansNeo-light.woff2') format('woff2'), 
+//     url('../fonts/SpoqaHanSansNeo-light.woff') format('woff'), 
+//     url('../fonts/SpoqaHanSansNeo-light.ttf') format('truetype');
+// }
+
+// @font-face {
+//     font-family: 'Spoqa Han Sans Neo';
+//     font-weight: 400;
+//     src: local('Spoqa Han Sans Neo Regular'),
+//      url('../fonts/SpoqaHanSansNeo-Regular.woff2') format('woff2'), 
+//      url('../fonts/SpoqaHanSansNeo-Regular.woff') format('woff'), 
+//      url('../fonts/SpoqaHanSansNeo-Regular.ttf') format('truetype');
+// }
+
+// @font-face {
+//     font-family: 'Spoqa Han Sans Neo';
+//     font-weight: 700;
+//     src: local('Spoqa Han Sans Neo Bold'),
+//      url('../fonts/SpoqaHanSansNeo-Bold.woff2') format('woff2'),
+//       url('../fonts/SpoqaHanSansNeo-Bold.woff') format('woff'), 
+//       url('../fonts/SpoqaHanSansNeo-Bold.ttf') format('truetype');
+// }
+
+@font-face {
+    font-family: 'KBFGTextL';
+    font-weight: 300;
+    src: local('KBFGTextL'), 
+    url('../fonts/KBFGTextL.woff2') format('woff2'), 
+    url('../fonts/KBFGTextL.woff') format('woff'), 
+    url('../fonts/KBFGTextL.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KBFGTextM';
+    font-weight: 400;
+    src: local('KBFGTextM'),
+     url('../fonts/KBFGTextM.woff2') format('woff2'), 
+     url('../fonts/KBFGTextM.woff') format('woff'), 
+     url('../fonts/KBFGTextM.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-weight: 400;
+    src: local('NotoSansKR'),
+     url('../fonts/NotoSansKR-Medium.woff2') format('woff2'), 
+     url('../fonts/NotoSansKR-Medium.woff') format('woff'), 
+     url('../fonts/NotoSansKR-Medium.ttf') format('truetype');
+}
+
+
+

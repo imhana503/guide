@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../static/css/style.css" />
+    <link rel="stylesheet" href="../../static/css/swiper.css" />
+    <script src="../../static/js/jquery-1.12.4.min.js"></script>
+    <script src="../../static/js/jquery-ui.js"></script>
+    <script src="../../static/js/ui.js"></script>
+    <script src="../../static/js/html.js"></script>
+    <script src="../../static/js/swiper.js"></script>
+    <title>index</title>
+    <style>
+      /* 배너   */
+.ut-slide-play{border-radius: 10px;overflow: hidden;position: relative;}
+.ut-slide-play>.inr{}
+.ut-slide-play{ border-radius: 10px; }
+.ut-slide-play .swiper{border-radius: 10px;background: #ffffff;}
+.ut-slide-play .swiper.swiper-container-initialized{background-color:transparent;}
+.ut-slide-play .swiper .slide{}
+.ut-slide-play .swiper .slide>li{list-style:none;}
+.ut-slide-play .swiper .slide>li .box{display: block;position: relative;}
+.ut-slide-play .swiper .slide>li .box img{width: 100%;display: block;top: 50%;width: 100%;max-width: inherit;min-width: 100%;}
+.ut-slide-play .swiper .slide>li .box img.mo{display:block;}
+.ut-slide-play .swiper .slide>li .box img.pc{display:none;}
+.ut-slide-play .swiper-pagination{position: absolute;right: 5px;top: 6px;left: auto;width: auto;bottom: auto;line-height: 0;}
+.ut-slide-play .swiper-pagination-bullet{width: 5px;height: 5px;border-radius: 3px;margin: 0px 0px;}
+.ut-slide-play .swiper-pagination-bullet + .swiper-pagination-bullet{margin-left:3px;}
+.ut-slide-play .swiper-pagination-bullet.swiper-pagination-bullet-active{border-radius:35%;}
+.ut-slide-play .swiper-pagination-bullet-active{width: 15px;background-color:#000000;}
+.ut-slide-play .swiper .control{position: absolute;right: 12rem;top: 13rem;text-align: center;z-index: 100;height: 24rem;display: flex;justify-content: center;align-items: end;}
+.ut-slide-play .swiper .control .plys{}
+.ut-slide-play .swiper .control .plys .bt{width:24rem;height:24rem;background: url(../img/common/ut_slide_play.png) no-repeat 0 0rem;background-size:24rem auto;font-size: 1rem; color: transparent;display:inline-block;vertical-align:middle;content:'';margin: 0rem 0rem 0rem 0rem;}
+.ut-slide-play .swiper .control .plys .bt.play{background-position-y: -30rem;}
+.ut-slide-play .swiper .control .dots{height: 17px;display: block;border-radius: 30px;min-width: 33px;text-align: center;padding: 0rem 3rem;letter-spacing: -1px;font-size: 11rem;color: #666666;line-height: 1;/* bottom: auto; *//* left: auto; *//* top: 10rem; */width: auto;}
+.ut-slide-play .swiper .control .dots.swiper-pagination-bullets{position: relative;height: 24rem;display: flex;align-items: center;}
+.ut-slide-play .swiper .control .dots.swiper-pagination-bullets .swiper-pagination-bullet{width: 8rem;height: 8rem;opacity:1;padding: 0rem;margin: 0 4rem;background: #bec2c7;border-radius: 8rem;}
+.ut-slide-play .swiper .control .dots.swiper-pagination-bullets .swiper-pagination-bullet:after{}
+.ut-slide-play .swiper .control .dots.swiper-pagination-bullets .swiper-pagination-bullet-active{width: 24rem;background-color: #555555;}
+.ut-slide-play .swiper .control .dots .swiper-pagination-current{ font-weight: 700; color: #000000; }
+.ut-slide-play .swiper .control .dots .swiper-pagination-total{}
+    </style>
+  </head>
+  <body>
+    <div class="wrap wrap--fixed" id="wrap">
+      <!-- Header include영역(s) -->
+      <include src="../inc/header.html" data-include-opt='{"visible":"true","class":"header--title, header--close", "title":"페이지타이틀"}'></include>
+
+      <!--// Header include영역(e) -->
+      <main id="container"> 
+        <div class="content" id="content"> 
+          <div class="banner-box">
+            <div class="ut-slide-play">
+              <div class="swiper-container swiper" data-slide-id="banner_1">
+                <div class="control">
+                  <div class="dots">asd</div>
+                  <div class="plys"><button type="button" class="bt play">정지asd</button></div>
+                </div>
+                <ul class="swiper-wrapper slide">
+                  <li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출">1</a></li>
+                  <li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출">2</a></li>
+                  <li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출">3</a></li>
+                  <li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출">4</a></li>
+                  <li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출">5</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+      <!-- footer include영역(s) 
+      <include src="../inc/footer.html" data-include-opt='{"visible":"true","class":"footer--test"}'></include>
+      -->
+<script>
+</script>
+    </div>
+  </body>
+</html>

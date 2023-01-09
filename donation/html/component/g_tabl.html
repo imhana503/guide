@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../static/css/style.css" />
+    <script src="../../static/js/jquery-1.12.4.min.js"></script>
+    <script src="../../static/js/jquery-ui.js"></script>
+    <script src="../../static/js/ui.js"></script>
+    <script src="../../static/js/html.js"></script>
+    <title>index</title>
+    <style>
+      /* 탭s */ 
+/* .ut-tabs.b{position: relative;margin-left: -2rem;margin-right: -2rem;margin-bottom: 15rem;padding: 0rem 0rem 0rem 0rem;overflow-x: auto;display: flex;flex-wrap: wrap;}
+.ut-tabs.b::-webkit-scrollbar{display: none;}
+.ut-tabs.b .menu{position:relative;text-align: center;background: #ffffff;display: flex;justify-content: left;align-items: center;white-space: nowrap;padding: 0rem 2rem 0rem 2rem;font-size: 0;}
+.ut-tabs.b .menu>li{position:relative;}
+.ut-tabs.b .menu>li:last-of-type{}
+.ut-tabs.b .menu>li+li{margin-left: 0.8rem;}
+.ut-tabs.b .menu>li>.bt{font-size: 1.4rem;color: #767676;display: block;padding: 0.8rem 1.6rem 0.8rem;position: relative;display: inline-flex;align-items: center;font-weight: 500;border-radius: 32rem;background: #f5f5f5;}
+.ut-tabs.b .menu>li>.bt>span{}
+.ut-tabs.b .menu>li:last-child>.bt{ border-right-width:1rem; }
+.ut-tabs.b .menu>li.active>.bt{color: #ffffff;font-weight: 700;background: #3667cd;}
+.ut-tabs.b .menu>li.active>.bt::after{position:absolute;left:0rem;bottom: 0rem;right: 0rem;height: 2rem;/* background-color: #3667cd;border-radius: 0rem;display:block;content:"";z-index: 1;} */
+.tab--scroll {
+  position: relative;
+  overflow-x: auto;
+  display: flex;  
+  flex-wrap: wrap;
+}
+.tab--scroll::-webkit-scrollbar {
+  display: none;
+}
+.tab--scroll .tab__list{
+  position:relative;text-align: center;background: #ffffff;display: flex;justify-content: left;align-items: center;white-space: nowrap;padding: 0rem 2rem 0rem 2rem;
+}
+.tab--scroll .tab__list li{
+  padding:2rem;
+}
+.tab--scroll .tab__list li.is-active{
+  background:red;
+}
+.tab--scroll .bt{
+  color: #ffffff;
+  background:blue;
+}
+    </style>
+  </head>
+  <body>
+    <div class="wrap" id="wrap">
+      <!-- Header include영역(s) -->
+      <include src="../inc/header.html" data-include-opt='{"visible":"true","class":"header--title, header--back", "title":"페이지타이틀"}'></include>
+      <!--// Header include영역(e) -->
+      <main id="container">
+        <div class="content" id="content"> 
+
+          <div class="ut-tabs b tab tab--scroll">
+						<ul class="menu tab__list">
+							<li class="is-active"><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_1" href="javascript:;">전체</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_2" href="javascript:;">메뉴2</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_3" href="javascript:;">메뉴3</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_4" href="javascript:;">메뉴4</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_5" href="javascript:;">메뉴5</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_6" href="javascript:;">메뉴6</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_7" href="javascript:;">메뉴7</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_8" href="javascript:;">메뉴8</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_9" href="javascript:;">메뉴9</a></li>
+						</ul>
+					</div>
+
+
+         <!-- 탭 -->
+         <div class="guid-item">
+            <h2 class="guid__tit">Tabs</h2>
+            <h3 class="guid__tit">Tab-line</h3>
+            <div class="tab tab--line">
+              <ul class="tab__list">
+                <li class="is-active"><a href="javascript:;">메뉴명</a></li>
+                <li><a href="javascript:;">메뉴명</a></li>
+                <li><a href="javascript:;">메뉴명</a></li>
+              </ul>
+              <div class="tab__content">
+                <div>탭 컨텐츠</div>
+                <div>탭 컨텐츠</div>
+                <div>탭 컨텐츠</div>
+              </div>
+            </div>
+
+            <h3 class="guid__tit">Tab-box</h3>
+            <div class="tab tab--box">
+              <ul class="tab__list">
+                <li class="is-active"><a href="javascript:;">메뉴명</a></li>
+                <li><a href="javascript:;">메뉴명</a></li>
+              </ul>
+              <div class="tab__content">
+                <div>탭 컨텐츠</div>
+                <div>탭 컨텐츠</div>
+                <div>탭 컨텐츠</div>
+              </div>
+            </div>
+            <h3 class="guid__tit">Tab-box 메뉴3개이상일때 클래스 'ohter'추가</h3>
+            <h3 class="guid__tit">Tab-box</h3>
+            <div class="tab tab--box other">
+              <ul class="tab__list">
+                <li class="is-active"><a href="javascript:;">메뉴명</a></li>
+                <li><a href="javascript:;">메뉴명</a></li>
+                <li><a href="javascript:;">메뉴명</a></li>
+              </ul>
+              <div class="tab__content">
+                <div>탭 컨텐츠</div>
+                <div>탭 컨텐츠</div>
+                <div>탭 컨텐츠</div>
+              </div>
+            </div>
+          </div>
+          <!--// 탭 -->
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

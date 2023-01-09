@@ -1,0 +1,60 @@
+.header {
+    $root: &;
+    width: 100%;
+    height: 4.8rem;
+    position: relative;
+    padding: 1.2rem 1.2rem 1.2rem 1.6rem;
+    z-index: 100;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 1.2rem 1.2rem 1.2rem 1.6rem;
+        height: 4.8rem;
+        background: #fff;
+    }
+    &__title {
+        font-size: 1.8rem;
+        line-height: 2.5;
+        font-weight: 700;
+    }
+    .button {
+        &__back {
+            width: 2.4rem;
+        height: 2.4rem;
+            margin-right: 0.6rem;
+            background: red;
+        }
+        &__gnb {
+            width: 2.4rem;
+            height: 2.4rem;
+            background: red;
+        }
+        &__close {
+            width: 2.4rem;
+            height: 2.4rem;
+            background: red;
+        }
+    }
+    .right-item {
+        display: flex;
+        margin-left: auto;
+    }
+}
+
+.gnb {
+    $root: &;
+    &__button {
+        width: 30px;
+        height: 30px;
+        background: red;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+}

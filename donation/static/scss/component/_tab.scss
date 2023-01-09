@@ -1,0 +1,113 @@
+/*tab*/
+.tab {
+    $root: &;
+    //스크롤시
+    // &--scroll{
+    //     position: relative;
+    //     overflow-x: auto;
+    //     display: flex;  
+    //     flex-wrap: wrap;
+    //     &::-webkit-scrollbar{
+    //         display: none;
+    //     }
+    //     #{$root}__list {
+    //         li{
+    //             padding:2rem;
+    //             border:1px solid red;
+    //         }
+    //         li.is-active {
+    //             background: #3667cd;
+    //         }
+    //     }
+    // }
+    &__list {
+        display: flex;
+        align-items: center;
+        position:relative;
+    }
+    &--box {
+        #{$root}__list {
+            height: 4rem;
+            border-radius: 100px;
+            background: #ebeef0;
+            > li {
+                flex: 1;
+                position: relative;
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 4rem;
+                    font-size: 1.6rem;
+                    line-height: 2.3rem;
+                    color: $KB_Give_05;
+                    text-align: center;
+                    border-radius: 20px;
+                }
+
+                &.is-active {
+                    a {
+                        position: relative;
+                        z-index: 2;
+                        background: #ffffff;
+                        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+                    }
+                }
+            }
+        }
+        &.other {
+            #{$root}__list {
+                > li + li::after {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    top: 1.2rem;
+                    left: -2px;
+                    //transform: translateY(-1.6rem);
+                    width: 1px;
+                    height: 1.6rem;
+                    background: #c6cbd0;
+                }
+            }
+        }
+    }
+    &--line {
+        #{$root}__list {
+            border-bottom: 1px solid $KB_Give_08;
+            > li {
+                // min-width: 3.2rem;
+                position: relative;
+                > a {
+                    display: block;
+                    padding: 0 0 1.2rem 0;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: 2.3rem;
+                    color: $KB_Give_05;
+                    text-align: center;
+                }
+                &.is-active {
+                    > a {
+                        color: $KB_Give_02;
+                    }
+                    &::after {
+                        display: block;
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        width: 100%;
+                        height: 4px;
+                        background: $KB_Give_02;
+                    }
+                }
+                & + li {
+                    margin-left: 2.8rem;
+                }
+            }
+        }
+    }
+}
+

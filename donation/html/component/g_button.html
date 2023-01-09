@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../static/css/style.css" />
+    <script src="../../static/js/jquery-1.12.4.min.js"></script>
+    <script src="../../static/js/ui.js"></script>
+    <script src="../../static/js/html.js"></script>
+    <title>index</title>
+  </head>
+  <body>
+    <div class="wrap" id="wrap">
+      <!-- Header include영역(s) -->
+      <include src="../inc/header.html" data-include-opt='{"visible":"true","class":"header--title, header--back", "title":"페이지타이틀"}'></include>
+      <!--// Header include영역(e) -->
+      <main id="container">
+        <div class="content" id="content"> 
+
+          <!-- 버튼 -->
+          <div class="guid-item">
+            <h2 class="guid__tit">버튼 - full</h2>
+            <h3 class="guid__tit">버튼 - Primary</h3>
+            <h4 class="guid__tit">버튼 - 56 lg</h4>
+            <button type="button" class="button button--primary button--lg">버튼</button>
+            <h4 class="guid__tit">버튼 - 48 md</h4>
+            <button type="button" class="button button--primary button--md">버튼</button>
+            <h4 class="guid__tit">버튼 - 40 sm</h4>
+            <button type="button" class="button button--primary button--sm">버튼</button>
+
+            <h3 class="guid__tit">버튼 - Secondary</h3>
+            <h4 class="guid__tit">버튼 - 56 lg</h4>
+            <button type="button" class="button button--secondary button--lg">버튼</button>
+            <h4 class="guid__tit">버튼 - 48 md</h4>
+            <button type="button" class="button button--secondary button--md">버튼</button>
+            <h4 class="guid__tit">버튼 - 40 sm</h4>
+            <button type="button" class="button button--secondary button--sm">버튼</button>
+
+            <h3 class="guid__tit">버튼 - Secondary disabled</h3>
+            <button type="button" class="button button--secondary button--sm disabled">버튼</button>
+          
+            <h2 class="guid__tit">버튼 2개</h2>
+            <div class="button__wrap button__wrap--flex">
+              <a href="javascript;" role="button" class="button button--secondary button--sm">버튼</a>
+              <a href="javascript;" role="button" class="button button--primary button--sm">버튼</a>
+            </div>
+
+            <h2 class="guid__tit">버튼 - tertiary</h2>
+            <h4 class="guid__tit">버튼 - 87 xxl</h4>
+            <a href="javascript;" role="button" class="button button--tertiary button--xxl">Label</a>
+            <h4 class="guid__tit">버튼 - 87 xl</h4>
+            <a href="javascript;" role="button" class="button button--tertiary button--xl">Label</a>
+            <h4 class="guid__tit">버튼 - 56 lg</h4>
+            <a href="javascript;" role="button" class="button button--tertiary button--lg">Label</a>
+            <h4 class="guid__tit">버튼 - 47 md</h4>
+            <a href="javascript;" role="button" class="button button--tertiary button--md">Label</a>
+            <h4 class="guid__tit">버튼 - 40 sm</h4>
+            <a href="javascript;" role="button" class="button button--tertiary button--sm">Label</a>
+            <h4 class="guid__tit">버튼 - 28 xs</h4>
+            <a href="javascript;" role="button" class="button button--tertiary button--xs">Label</a>
+          
+            <h4 class="guid__tit">버튼 - 왼족아이콘</h4>
+            <a href="javascript;" role="button" class="button button--tertiary button--sm ico--left">Label</a>
+            <h4 class="guid__tit">버튼 - 오른아이콘</h4>
+            <a href="javascript;" role="button" class="button button--tertiary button--sm ico--right">Label</a>
+          
+            <h2 class="guid__tit">버튼 - ActionButton</h2>
+            <div class="button__wrap button__wrap--flex">
+              <a href="javascript;" role="button" class="button button--action ico--left">Label</a>
+              <a href="javascript;" role="button" class="button button--action ico--right">Label</a>
+            </div>
+
+            <h2 class="guid__tit">버튼 - inputBtn</h2>
+            <a href="javascript;" role="button" class="button button--input">Label</a>
+            <a href="javascript;" role="button" class="button button--input">Label</a>
+
+            <h2 class="guid__tit">하단버튼 고정</h2>
+            <div class="fixed__wrap"><button type="button" class="button button--secondary button--lg">버튼</button></div>
+          </div>
+          <!--// 버튼 --> 
+         
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
