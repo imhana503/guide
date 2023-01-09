@@ -11,6 +11,28 @@
     <script src="../../static/js/ui.js"></script>
     <script src="../../static/js/html.js"></script>
     <title>index</title>
+    <style>
+      .gnb{
+        /* display:none; */
+        overflow: hidden;
+        visibility: hidden;
+        position:fixed;
+        top:0;
+        right:0;
+        width:100%;
+        background:red;
+        z-index:100;
+        transition: all 0.4s;
+        transform: translateX(100vh);
+      }
+      .gnb.is-active{
+        display:block;
+        visibility: visible;
+        height:100%;
+        overflow-y: auto;
+        transform: translateX(0);
+      }
+    </style>
   </head>
   <body>
     <div class="wrap wrap--fixed" id="wrap">
@@ -27,7 +49,12 @@
       -->
 
       <!-- Header include영역(s) -->
-      <include src="../inc/header.html" data-include-opt='{"visible":"true","class":"header--title, header--close", "title":"페이지타이틀"}'></include>
+      <include src="../inc/header.html" data-include-opt='{"visible":"true","class":"header--title, header--close, header--gnb", "title":"페이지타이틀"}'></include>
+
+      <div class="gnb" id="gnb">
+        <div style="padding:40rem 0; height:1000rem">gnb 영역입니다</div>
+      </div>
+
 
       <!--// Header include영역(e) -->
       <main id="container">

@@ -12,6 +12,23 @@ var ui = {
 		this.tabs.init();
 		this.popup.init();
 		this.slides.init();
+		this.gnb.init();
+	},
+	gnb:{
+		init:function(){  
+			$('.button__gnb').on('click', function(){
+				console.log('aa')
+				$('#gnb').addClass('is-active')
+			});
+
+		// 	if($('.button__gnb').hasClass('is-active')) {
+    //     $('.button__gnb.is-active').trigger('click');
+    // }
+
+		// 	if($('#gnb').is(':visible')) {//gnb닫기
+		// 			$('#gnb .button__gnb').trigger('click');
+		// 	}
+		}
 	},
 	slides:{ // 스와이프 슬라이드
 		init:function(){
